@@ -29,7 +29,14 @@ const checkPrice = async () => {
   let $ = cheerio.load(response);
   let price = $('span[id= "priceblock_ourprice"]').text();
 
+  //   price.push(data);
   console.log(price);
+  let currentPrice = Number(price.replace(/[^0-9.-]+/g, ""));
+  console.log(currentPrice);
+
+  if (currentPrice < 30000) {
+    console.log("BUY now at ₹ " + currentPrice);
+  }
 };
 
 const monitor = async () => {
