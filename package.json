@@ -1,0 +1,33 @@
+{
+  "name": "pricetracker",
+  "version": "1.0.0",
+  "description": "//Test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/app",
+    "server": "nodemon backend/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpitnath/price_Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arpitnath/price_Tracker/issues"
+  },
+  "homepage": "https://github.com/arpitnath/price_Tracker#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cron": "^1.8.2",
+    "nodemailer": "^6.4.16",
+    "puppeteer": "^5.4.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
